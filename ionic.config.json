@@ -1,0 +1,7 @@
+{
+  "name": "bloomperg",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
