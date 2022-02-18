@@ -1,6 +1,24 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+:root {
+  --ion-color-custom: #3670e5;
+  --ion-color-custom-rgb: 54,112,229;
+  --ion-color-custom-contrast: #ffffff;
+  --ion-color-custom-contrast-rgb: 255,255,255;
+  --ion-color-custom-shade: #3063ca;
+  --ion-color-custom-tint: #4a7ee8;
+}
+
+.ion-color-custom {
+  --ion-color-base: var(--ion-color-custom);
+  --ion-color-base-rgb: var(--ion-color-custom-rgb);
+  --ion-color-contrast: var(--ion-color-custom-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-custom-contrast-rgb);
+  --ion-color-shade: var(--ion-color-custom-shade);
+  --ion-color-tint: var(--ion-color-custom-tint);
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
