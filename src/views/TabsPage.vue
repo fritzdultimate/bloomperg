@@ -2,6 +2,12 @@
     <ion-page>
         <ion-tabs>
             <ion-router-outlet></ion-router-outlet>
+                <!-- fab placed to the bottom end -->
+                <ion-fab vertical="center" horizontal="end" slot="fixed">
+                    <ion-fab-button>
+                        <ion-icon :icon="add"></ion-icon>
+                    </ion-fab-button>
+                </ion-fab>
             <ion-tab-bar slot="bottom">
                 <ion-tab-button tab="home" href="/tabs/home">
                     <ion-icon :icon="home" />
@@ -35,19 +41,28 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { person, home, lockClosed, wallet, lockOpen } from 'ionicons/icons';
+import { person, home, lockClosed, wallet, lockOpen, add } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'TabsPage',
-  components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
+  components: { 
+      IonLabel, 
+        IonTabs, 
+        IonTabBar, 
+        IonTabButton, 
+        IonIcon, 
+        IonPage, 
+        IonRouterOutlet, 
+    },
   setup() {
-    return { 
-      person, 
-      home,
-      wallet,
-      lockClosed,
-      lockOpen
-    }
+        return { 
+        person, 
+        home,
+        wallet,
+        lockClosed,
+        lockOpen,
+        add
+        }
   }
 });
 </script>
